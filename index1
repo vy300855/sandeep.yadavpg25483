@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Yadav | Finance Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInDown 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 2s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00c6ff;
+      padding-left: 10px;
+      animation: slideIn 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 8px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: #00c6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      margin-top: 50px;
+      animation: fadeIn 3s ease;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00c6ff; }
+      to { text-shadow: 0 0 20px #0072ff; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sandeep Yadav</h1>
+    <p>PGDM (Finance) Student | Aspiring Investment Analyst</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>PGDM (Finance) student at ISBR Business School (2025-2027) with strong skills in Financial Analysis, Equity Research, Derivatives, and Financial Modelling. Hands-on experience in financial reporting, reconciliation, and SAP-based documentation at Martin and Harris.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="card">
+      <ul>
+        <li>Financial Statement Analysis</li>
+        <li>Equity Research & Valuation</li>
+        <li>Financial Modelling (DCF, Ratio Analysis)</li>
+        <li>Portfolio Analysis</li>
+        <li>Derivatives & Risk Management</li>
+        <li>Mutual Funds & Wealth Management</li>
+        <li>Corporate Finance</li>
+        <li>Advanced MS Excel, SAP & Tally ERP</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Finance Intern, Martin and Harris</h3>
+      <p><em>Dec 2024 - Jul 2025</em></p>
+      <ul>
+        <li>Prepared financial documentation and MIS reports.</li>
+        <li>Improved reconciliation accuracy through expense tracking.</li>
+        <li>Performed account reconciliation and variance analysis.</li>
+        <li>Managed SAP and Tally ERP records.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.B.A</strong> - Chandigarh University (2021-2024) | 7.8 CGPA</p>
+      <p>Class XII - CBSE (2021) | 78.4%</p>
+      <p>Class X - CBSE (2019) | 67.3%</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Entrepreneurship</li>
+        <li>Corporate Finance</li>
+        <li>Financial Modelling and Valuation</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>📧 sandeepyadav01811@gmail.com | 📞 +91 7310732311</p>
+    <p>
+      <a href="https://www.linkedin.com/in/sandeep-yadav-46202b21a" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
