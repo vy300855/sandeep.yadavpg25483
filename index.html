@@ -1,211 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sandeep Yadav | Finance Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #0f172a;
-    color: white;
-}
-
-/* NAVBAR */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: rgba(255,255,255,0.05);
-    position: fixed;
-    width: 100%;
-}
-
-nav h2 {
-    color: #38bdf8;
-}
-
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-/* HERO */
-.hero {<img src="Profile.jpg" style="width:150px; border-radius:50%; margin-top:20px;">
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 50px;
-}
-
-.hero span {
-    color: #38bdf8;
-}
-
-.typing {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-/* SECTION */
-section {
-    padding: 80px 10%;
-}
-
-h2 {
-    margin-bottom: 20px;
-    color: #38bdf8;
-}
-
-/* CARD */
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* GRID */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* BUTTON */
-.btn {
-    background: #38bdf8;
-    padding: 10px 20px;
-    border: none;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav>
-    <h2>Sandeep</h2>
-    <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-    <h1>Hi, I'm <span>Sandeep Yadav</span></h1>
-    <div class="typing" id="typing"></div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        PGDM (Finance) student at ISBR Business School with strong expertise in Financial Analysis, Equity Research, and Financial Modelling. Experienced in SAP, Excel, and financial reporting.
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-        <div class="card">Advanced Excel</div>
-        <div class="card">Financial Analysis</div>
-        <div class="card">Equity Research</div>
-        <div class="card">DCF Valuation</div>
-        <div class="card">SAP & Tally</div>
-        <div class="card">Portfolio Analysis</div>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-        <h3>Finance Intern - Martin & Harris</h3>
-        <p>Prepared MIS reports, performed reconciliation, worked on SAP and Excel-based financial analysis.</p>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: sandeepyadav01811@gmail.com</p>
-        <p>Phone: +91 7310732311</p>
-        <a href="https://www.linkedin.com/in/sandeep-yadav-46202b21a" target="_blank">
-            <button class="btn">LinkedIn</button>
-        </a>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Sandeep Yadav</p>
-</footer>
-
-<!-- TYPING EFFECT -->
-<script>
-const text = ["Finance Student", "Equity Research Enthusiast", "Excel Expert"];
-let i = 0, j = 0, currentText = "", isDeleting = false;
-
-function type() {
-    if (i < text.length) {
-        if (!isDeleting && j <= text[i].length) {
-            currentText = text[i].substring(0, j++);
-        } else if (isDeleting && j >= 0) {
-            currentText = text[i].substring(0, j--);
-        }
-
-        document.getElementById("typing").innerHTML = currentText;
-
-        if (j == text[i].length) isDeleting = true;
-        if (j == 0) {
-            isDeleting = false;
-            i++;
-        }
-    } else {
-        i = 0;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Yadav | Finance Portfolio</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
-    setTimeout(type, 100);
-}
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      overflow-x: hidden;
+    }
 
-type();
-</script>
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInDown 2s ease;
+    }
 
+    header h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s infinite alternate;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 2s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 5px solid #00c6ff;
+      padding-left: 10px;
+      animation: slideIn 1.5s ease;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 8px 0;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: "★";
+      position: absolute;
+      left: 0;
+      color: #00c6ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.5);
+      margin-top: 50px;
+      animation: fadeIn 3s ease;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00c6ff; }
+      to { text-shadow: 0 0 20px #0072ff; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sandeep Yadav</h1>
+    <p>PGDM (Finance) Student | Aspiring Investment Analyst</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>PGDM (Finance) student at ISBR Business School (2025-2027) with strong skills in Financial Analysis, Equity Research, Derivatives, and Financial Modelling. Hands-on experience in financial reporting, reconciliation, and SAP-based documentation at Martin and Harris.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <div class="card">
+      <ul>
+        <li>Financial Statement Analysis</li>
+        <li>Equity Research & Valuation</li>
+        <li>Financial Modelling (DCF, Ratio Analysis)</li>
+        <li>Portfolio Analysis</li>
+        <li>Derivatives & Risk Management</li>
+        <li>Mutual Funds & Wealth Management</li>
+        <li>Corporate Finance</li>
+        <li>Advanced MS Excel, SAP & Tally ERP</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Finance Intern, Martin and Harris</h3>
+      <p><em>Dec 2024 - Jul 2025</em></p>
+      <ul>
+        <li>Prepared financial documentation and MIS reports.</li>
+        <li>Improved reconciliation accuracy through expense tracking.</li>
+        <li>Performed account reconciliation and variance analysis.</li>
+        <li>Managed SAP and Tally ERP records.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><strong>B.B.A</strong> - Chandigarh University (2021-2024) | 7.8 CGPA</p>
+      <p>Class XII - CBSE (2021) | 78.4%</p>
+      <p>Class X - CBSE (2019) | 67.3%</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Entrepreneurship</li>
+        <li>Corporate Finance</li>
+        <li>Financial Modelling and Valuation</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>📧 sandeepyadav01811@gmail.com | 📞 +91 7310732311</p>
+    <p>
+      <a href="https://www.linkedin.com/in/sandeep-yadav-46202b21a" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
