@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep Yadav | Finance Portfolio</title>
   <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
-      overflow-x: hidden;
     }
 
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 50px 20px;
+      flex-wrap: wrap;
       animation: fadeInDown 2s ease;
     }
 
-    header h1 {
-      font-size: 3rem;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 20px #00c6ff;
+      margin-right: 30px;
       animation: glow 2s infinite alternate;
     }
 
-    header p {
+    .intro {
+      max-width: 600px;
+    }
+
+    .intro h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro p {
       font-size: 1.2rem;
-      margin-top: 10px;
       color: #ddd;
     }
 
     section {
-      padding: 50px 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
       animation: fadeInUp 2s ease;
@@ -51,7 +59,6 @@
       margin-bottom: 20px;
       border-left: 5px solid #00c6ff;
       padding-left: 10px;
-      animation: slideIn 1.5s ease;
     }
 
     .card {
@@ -63,22 +70,23 @@
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       background: rgba(255, 255, 255, 0.2);
     }
 
     ul {
       list-style: none;
+      padding-left: 0;
     }
 
     ul li {
       margin: 8px 0;
-      position: relative;
       padding-left: 20px;
+      position: relative;
     }
 
     ul li::before {
-      content: "★";
+      content: "✔";
       position: absolute;
       left: 0;
       color: #00c6ff;
@@ -89,21 +97,18 @@
       padding: 30px;
       background: rgba(0, 0, 0, 0.5);
       margin-top: 50px;
-      animation: fadeIn 3s ease;
     }
 
     footer a {
       color: #00c6ff;
       text-decoration: none;
       margin: 0 10px;
-      transition: color 0.3s ease;
     }
 
     footer a:hover {
       color: #fff;
     }
 
-    /* Animations */
     @keyframes fadeInDown {
       from { opacity: 0; transform: translateY(-50px); }
       to { opacity: 1; transform: translateY(0); }
@@ -114,26 +119,19 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateX(-50px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
     @keyframes glow {
-      from { text-shadow: 0 0 10px #00c6ff; }
-      to { text-shadow: 0 0 20px #0072ff; }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from { box-shadow: 0 0 10px #00c6ff; }
+      to { box-shadow: 0 0 20px #0072ff; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sandeep Yadav</h1>
-    <p>PGDM (Finance) Student | Aspiring Investment Analyst</p>
+    <img src="/attachments/Krm4iNLNWDBKitmxDc4wT.jpeg" alt="Sandeep Yadav" class="profile-img" />
+    <div class="intro">
+      <h1>Sandeep Yadav</h1>
+      <p>PGDM (Finance) Student | Aspiring Investment Analyst</p>
+    </div>
   </header>
 
   <section>
